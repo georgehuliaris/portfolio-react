@@ -17,14 +17,25 @@ const useStyles = makeStyles(theme => ({
     subtitle: {
         color: "tan",
         marginBottom: "3rem"
+    }, 
+    typedContainer: {
+        position: "absolute",
+        top: "50%",
+        left: "50%",
+        transform: "translate(-50%, -50%)",
+        width: "100vw",
+        textAlign: "center",
+        zIndex: 1
     }
 }));
 
 const Header = () => {
     const classes = useStyles()
     return (
-        <Box>
-            <Avatar className={classes.avatar} src={avatar} alt="George Huliaris" />
+        <Box className={classes.typedContainer}>
+            <Grid container justify="center">
+                <Avatar className={classes.avatar} src={avatar} alt="George Huliaris" />
+            </Grid>
             <Typography className={classes.title} variant="h4">
                 <Typed strings={["George Huliaris"]} typeSpeed={40}/>
             </Typography>
