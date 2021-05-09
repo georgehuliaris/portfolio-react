@@ -128,13 +128,95 @@ const Resume = () => {
                     className={classes.subHeading}>
                         co-founder
                     </Typography>
-                    <Typography variant="body1" align="center">
+                    <Typography 
+                    variant="body1"
+                     align="center" 
+                     style={{color: "tomato"}}>
                         MustacheStuff.com
                     </Typography>
                     <Typography 
                     variant="subtitle1" 
-                    align="center">
+                    align="center"
+                    style={{color: "tan"}}>
                        Co-founded, cfo, managed shipping  
+                    </Typography>
+                </Box>
+                <Typography 
+                variant="h2" 
+                className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+                >
+                2010 <br/>
+                </Typography>
+                <Box component="div" className={classes.timeLineItem}>
+                    <Typography 
+                    variant="h5" 
+                    align="center" 
+                    className={classes.subHeading}>
+                        Apple Sales Associate
+                    </Typography>
+                    <Typography 
+                    variant="body1"
+                     align="center" 
+                     style={{color: "tomato"}}>
+                        Apple 
+                    </Typography>
+                    <Typography 
+                    variant="subtitle1" 
+                    align="center"
+                    style={{color: "tan"}}>
+                       Lead sales for every store I worked in 
+                    </Typography>
+                </Box>
+                <Typography 
+                variant="h2" 
+                className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+                >
+                2012 <br/>
+                </Typography>
+                <Box component="div" className={classes.timeLineItem}>
+                    <Typography 
+                    variant="h5" 
+                    align="center" 
+                    className={classes.subHeading}>
+                        Apple Sales Expert
+                    </Typography>
+                    <Typography 
+                    variant="body1"
+                     align="center" 
+                     style={{color: "tomato"}}>
+                        Apple
+                    </Typography>
+                    <Typography 
+                    variant="subtitle1" 
+                    align="center"
+                    style={{color: "tan"}}>
+                       Mentored and lead sales team  
+                    </Typography>
+                </Box>
+                <Typography 
+                variant="h2" 
+                className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+                >
+                2015<br/>
+                </Typography>
+                <Box component="div" className={classes.timeLineItem}>
+                    <Typography 
+                    variant="h5" 
+                    align="center" 
+                    className={classes.subHeading}>
+                        co-founded
+                    </Typography>
+                    <Typography 
+                    variant="body1"
+                     align="center" 
+                     style={{color: "tomato"}}>
+                        The Omega Grill
+                    </Typography>
+                    <Typography 
+                    variant="subtitle1" 
+                    align="center"
+                    style={{color: "tan"}}>
+                       Owner and General Manager  
                     </Typography>
                 </Box>
             </Box>
