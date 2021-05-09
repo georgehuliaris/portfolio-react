@@ -1,9 +1,12 @@
 import React, {useState} from 'react';
-import { AppBar, Divider, Typography, Box } from '@material-ui/core';
 import { makeStyles } from "@material-ui/core/styles";
 import MobilRightMenuSlider from "@material-ui/core/Drawer";
 import {
     Toolbar,
+    Typography,
+    Box,
+    AppBar,
+    Divider,
     ListItem,
     IconButton,
     ListItemText,
@@ -21,7 +24,7 @@ import {
 }from "@material-ui/icons"
 import avatar from "../avatar.png";
 
-const useStyles = makeStyles(theme=>({
+const useStyles = makeStyles(theme => ({
     menuSliderContainer: {
         width: 250,
         background: "#511",
@@ -40,40 +43,41 @@ const useStyles = makeStyles(theme=>({
 
 const menuItems = [
     {
-        listIcon: <Home/>,
+        listIcon: <Home />,
         listText: "Home"
     },
     {
-        listIcon: <AssignmentInd/>,
+        listIcon: <AssignmentInd />,
         listText: "Resume"
     },
     {
-        listIcon: <Apps/>,
+        listIcon: <Apps />,
         listText: "Portfolio"
     },
     {
-        listIcon: <ContactMail/>,
+        listIcon: <ContactMail />,
         listText: "Contacts"
-    },
+    }
     
 ]
 
 const Navbar = () => {
-    const[state, setState] = useState({
+    const [state, setState] = useState({
         right: false
     });
 
     const toggleSlider = (slider, open) => ()  => {
-        setState({...state, [slider]: open});
+        setState({...state, [slider]: open });
     };
-    const classes = useStyles()
 
-    const sideList = slider => {
+    const classes = useStyles();
+
+    const sideList = slider => (
         <Box className={classes.menuSliderContainer} component="div">
-        <Avatar className={classes.avatar} src={avatar} alt="{avatar}"/>
+        <Avatar className={classes.avatar} src={avatar} alt="George Huliaris" />
         <Divider />
         <List>
-            {menuItems.map((lsItem, key) =>(
+            {menuItems.map((lsItem, key) => (
                 <ListItem button key={key}>
                 <ListItemIcon className={classes.listItem}>
                     {lsItem.listIcon}
@@ -83,25 +87,30 @@ const Navbar = () => {
                 primary={lsItem.listText} />
             </ListItem>
                 ))}
-        </List>
+            </List>
         </Box>
-    }
+    )
     return (
         <>
         <Box component="nav">
             <AppBar position="static" style={{background: "#222"}}>
                 <Toolbar>
-                    <IconButton>
+                    <IconButton onClick={toggleSlider("right", true)}>
                         <ArrowBack style={{ color: "tomato" }} />
                     </IconButton>
                     <Typography variant="h5" style={{ color: "tan" }}>
                         Portfolio
                     </Typography>
+                    <MobilRightMenuSlider 
+                    anchor="right"
+                    open={state.right}>
+                        {sideList("right")}
+                    </MobilRightMenuSlider>
                 </Toolbar>
             </AppBar>
         </Box>
         </>
-    )
-}
+    );
+};
 
 export default Navbar;
