@@ -22,7 +22,7 @@ import {
     Apps,
     ContactMail
 }from "@material-ui/icons"
-import avatar from "../avatar.png";
+import avatar from "../avatarThinking.png";
 
 const useStyles = makeStyles(theme => ({
     menuSliderContainer: {
