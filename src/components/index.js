@@ -4,9 +4,11 @@ import Header from "./Header";
 import Particles from "react-particles-js";
 import { makeStyles } from "@material-ui/styles";
 
+
 const useStyles = makeStyles({
   particlesCanva: {
     position: "absolute",
+    opacity: "0.3",
   },
 });
 
@@ -29,9 +31,9 @@ const Home = () => {
               },
             },
             shape: {
-              type: "circle",
+              type: "star",
               stroke: {
-                width: 1,
+                width: 3,
                 color: "tomato",
               },
             },
@@ -46,15 +48,15 @@ const Home = () => {
               },
             },
             opacity: {
-                value: 1,
-                random: true,
-                anim: {
-                    enable: true,
-                    speed: 5,
-                    opacity_min: 0.1,
-                    sync: false
-                }
-            }
+              value: 1,
+              random: true,
+              anim: {
+                enable: true,
+                speed: 1,
+                opacity_min: 0.1,
+                sync: false,
+              },
+            },
           },
         }}
       />
