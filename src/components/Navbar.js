@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { makeStyles } from "@material-ui/core/styles";
-import MobilRightMenuSlider from "@material-ui/core/Drawer";
+import MobilLeftMenuSlider from "@material-ui/core/Drawer";
 import {
     Toolbar,
     Typography,
@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
     menuSliderContainer: {
         width: 250,
         background: "#511",
-        height: "30rem"
+        height: "100%"
     },
     avatar: {
         display: "block",
@@ -63,7 +63,7 @@ const menuItems = [
 
 const Navbar = () => {
     const [state, setState] = useState({
-        right: false
+        Left: false
     });
 
     const toggleSlider = (slider, open) => ()  => {
@@ -73,7 +73,11 @@ const Navbar = () => {
     const classes = useStyles();
 
     const sideList = slider => (
-        <Box className={classes.menuSliderContainer} component="div">
+        <Box 
+        className={classes.menuSliderContainer} 
+        component="div"
+        onClick={toggleSlider(slider, false)}
+        >
         <Avatar className={classes.avatar} src={avatar} alt="George Huliaris" />
         <Divider />
         <List>
@@ -95,17 +99,19 @@ const Navbar = () => {
         <Box component="nav">
             <AppBar position="static" style={{background: "#222"}}>
                 <Toolbar>
-                    <IconButton onClick={toggleSlider("right", true)}>
+                    <IconButton onClick={toggleSlider("left", true)}>
                         <ArrowBack style={{ color: "tomato" }} />
                     </IconButton>
                     <Typography variant="h5" style={{ color: "tan" }}>
                         Portfolio
                     </Typography>
-                    <MobilRightMenuSlider 
-                    anchor="right"
-                    open={state.right}>
-                        {sideList("right")}
-                    </MobilRightMenuSlider>
+                    <MobilLeftMenuSlider 
+                    anchor="left"
+                    open={state.left}
+                    onClose={toggleSlider("left", false)}
+                    >
+                        {sideList("left")}
+                    </MobilLeftMenuSlider>
                 </Toolbar>
             </AppBar>
         </Box>
