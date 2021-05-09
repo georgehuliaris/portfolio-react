@@ -42,7 +42,15 @@ const Header = () => {
             <br/>
             <Typography className={classes.subtitle} variant="h5">
                 <Typed 
-                strings={["Web Design", "Web Development", "MERN Stack", "umm...", "Crypto Currency Enthusiast!", "uhh... oh and!", "Restaurateur!" ]} 
+                strings={[
+                    "Web Design", 
+                    "Web Development", 
+                    "MERN Stack", 
+                    "umm...", 
+                    "Crypto Currency Enthusiast!", 
+                    "... oh!",  
+                    "... oh and!!!", 
+                    "Restaurateur!" ]} 
                 typeSpeed={40}
                 backSpeed={75}
                 loop

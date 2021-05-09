@@ -97,7 +97,7 @@ const useStyles = makeStyles(theme=>({
         padding: "3rem 0",
         textTransform: "uppercase"
     },
-    subHeading:{
+    subHeading: {
         color: "white",
         padding: "0",
         textTransform: "uppercase"
@@ -121,14 +121,19 @@ const Resume = () => {
                 2009 <br/>
                 {/* Co-Founded MustacheStuff.com */}
                 </Typography>
-                <Box component="div" className={classes.timelineItem}>
-                    <Typography variant="h5" align="center" className={classes.subHeading}>
+                <Box component="div" className={classes.timeLineItem}>
+                    <Typography 
+                    variant="h5" 
+                    align="center" 
+                    className={classes.subHeading}>
                         co-founder
                     </Typography>
                     <Typography variant="body1" align="center">
                         MustacheStuff.com
                     </Typography>
-                    <Typography variant="subtitle1" align="center">
+                    <Typography 
+                    variant="subtitle1" 
+                    align="center">
                        Co-founded, cfo, managed shipping  
                     </Typography>
                 </Box>
