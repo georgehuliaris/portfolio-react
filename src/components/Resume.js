@@ -45,7 +45,7 @@ const useStyles = makeStyles(theme=>({
         "&:before": {
             content: "''",
             position: "absolute",
-            right: "-0.625rem",
+            right: "0.625rem",
             top: "calc(50% - 5px)",
             borderStyle: "solid",
             borderColor: "tomato tomato transparent transparent",
@@ -62,7 +62,7 @@ const useStyles = makeStyles(theme=>({
             },
             "&:nth-of-type(2n):before": {
                 right: "auto",
-                left: "0.625rem",
+                left: "-0.625rem",
                 borderColor: "transparent transparent tomato tomato"
             }
         }
@@ -84,13 +84,23 @@ const useStyles = makeStyles(theme=>({
             margin: "0 auto",
             "&:nth-of-type(2n)": {
                 float: "none",
-                margin: "0auto"
+                margin: "0 auto"
             },
             "&:nth-of-type(2n):before": {
                 display: "none"
             }
         }
 
+    },
+    heading: {
+        color: "tomato",
+        padding: "3rem 0",
+        textTransform: "uppercase"
+    },
+    subHeading:{
+        color: "white",
+        padding: "0",
+        textTransform: "uppercase"
     }
 }));
 
@@ -100,14 +110,28 @@ const Resume = () => {
         <>
         <Navbar />
         <Box component="header" className={classes.mainContainer}>
-            <Typography variant="h4" align="center">
+            <Typography variant="h4" align="center" className={classes.heading}>
             Working Experience
             </Typography>
             <Box component="div" className={classes.timeLine}>
-                <Typography variant="h2" className={classes.timeLineYear}>
+                <Typography 
+                variant="h2" 
+                className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+                >
                 2009 <br/>
                 {/* Co-Founded MustacheStuff.com */}
                 </Typography>
+                <Box component="div" className={classes.timelineItem}>
+                    <Typography variant="h5" align="center" className={classes.subHeading}>
+                        co-founder
+                    </Typography>
+                    <Typography variant="body1" align="center">
+                        MustacheStuff.com
+                    </Typography>
+                    <Typography variant="subtitle1" align="center">
+                       Co-founded, cfo, managed shipping  
+                    </Typography>
+                </Box>
             </Box>
         </Box>
         </>
