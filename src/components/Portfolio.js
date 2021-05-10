@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import {
+  Avatar,
   Box,
   Grid,
   Card,
@@ -16,10 +17,11 @@ import project1 from "../images/portfolio.png";
 import project2 from "../images/password_gen.png";
 import project3 from "../images/cryptostock.png";
 import project4 from "../images/ExpressNext.png";
+import avatar from "../thankfulme.png";
 
 
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
     mainContainer: {
         background: "#233",
         height:"100%"
@@ -28,8 +30,15 @@ const useStyles = makeStyles({
         maxWidth: 345,
         // margin: "3rem"
         margin: "5rem auto"
-    }
-})
+    },
+    avatar: {
+      width: theme.spacing(5),
+      height: theme.spacing(5),
+      margin: theme.spacing(5),
+      alignContent: "center",
+  },
+    
+}));
 
 const Portfolio = () => {
     const classes = useStyles()
@@ -107,6 +116,7 @@ const Portfolio = () => {
               </CardActions>
           </Card>
         </Grid>
+        
         {/* Project 3 */}
         <Grid item xs={12} sm={8} md={6}>
           <Card className={classes.cardContainer}>
@@ -178,6 +188,7 @@ const Portfolio = () => {
           </Card>
         </Grid>
       </Grid>
+<Avatar className={classes.avatar} src={avatar} alt="George Huliaris" />
     </Box>
   );
 };

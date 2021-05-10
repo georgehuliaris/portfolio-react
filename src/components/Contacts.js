@@ -1,8 +1,10 @@
 import React from "react";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
-import { TextField, Typography, Button, Grid, Box } from "@material-ui/core";
+import { TextField, Typography, Button, Grid, Box, Avatar } from "@material-ui/core";
 import SendIcon from "@material-ui/icons/Send";
 import Navbar from "./Navbar";
+import avatar from "../luckyme.png";
+
 
 const useStyles = makeStyles((theme) => ({
   form: {
@@ -16,6 +18,13 @@ const useStyles = makeStyles((theme) => ({
     color: "tomato",
     borderColor: "tomato",
   },
+  avatar: {
+    width: theme.spacing(15),
+    height: theme.spacing(15),
+    margin: theme.spacing(15),
+    
+
+},
 }));
 
 const InputField = withStyles({
@@ -46,7 +55,9 @@ const Contacts = () => {
     <Box component="div" style={{ background: "#233", height: "100vh" }}>
         <Navbar />
       <Grid container justify="center">
+      
         <Box component="form" className={classes.form}>
+        <Avatar className={classes.avatar} src={avatar} alt="George Huliaris" />
           <Typography variant="h5" style={{color: "tomato", textAlign: "center", textTransform: "uppercase" }}>Hire or contact me!</Typography>
           <InputField
             fullWidth={true}
@@ -78,6 +89,7 @@ const Contacts = () => {
           <Button className={classes.button} variant="outlined" fullWidth={true} endIcon={<SendIcon />}>
             contact me
           </Button>
+          
         </Box>
       </Grid>
     </Box>
