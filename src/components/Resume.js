@@ -119,7 +119,6 @@ const Resume = () => {
                 className={`${classes.timeLineYear} ${classes.timeLineItem}`}
                 >
                 2009 <br/>
-                {/* Co-Founded MustacheStuff.com */}
                 </Typography>
                 <Box component="div" className={classes.timeLineItem}>
                     <Typography 
@@ -145,7 +144,7 @@ const Resume = () => {
                 variant="h2" 
                 className={`${classes.timeLineYear} ${classes.timeLineItem}`}
                 >
-                2010 <br/>
+                2010 - 2012 <br/>
                 </Typography>
                 <Box component="div" className={classes.timeLineItem}>
                     <Typography 
@@ -171,7 +170,7 @@ const Resume = () => {
                 variant="h2" 
                 className={`${classes.timeLineYear} ${classes.timeLineItem}`}
                 >
-                2012 <br/>
+                2012 - 2015 <br/>
                 </Typography>
                 <Box component="div" className={classes.timeLineItem}>
                     <Typography 
@@ -197,14 +196,14 @@ const Resume = () => {
                 variant="h2" 
                 className={`${classes.timeLineYear} ${classes.timeLineItem}`}
                 >
-                2015<br/>
+                2015 - Present<br/>
                 </Typography>
                 <Box component="div" className={classes.timeLineItem}>
                     <Typography 
                     variant="h5" 
                     align="center" 
                     className={classes.subHeading}>
-                        co-founded
+                        co-owner
                     </Typography>
                     <Typography 
                     variant="body1"
@@ -216,7 +215,7 @@ const Resume = () => {
                     variant="subtitle1" 
                     align="center"
                     style={{color: "tan"}}>
-                       Owner and General Manager  
+                       Co-Owner and General Manager  
                     </Typography>
                 </Box>
             </Box>
