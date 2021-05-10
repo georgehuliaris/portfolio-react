@@ -1,7 +1,9 @@
 import React from 'react'
 import {makeStyles} from "@material-ui/core/styles";
-import { Typography, Box } from "@material-ui/core"
+import { Typography, Box, Avatar } from "@material-ui/core"
 import Navbar from "./Navbar";
+import avatar from "../sweatme.png"
+
 
 const useStyles = makeStyles(theme=>({
     mainContainer: {
@@ -101,6 +103,12 @@ const useStyles = makeStyles(theme=>({
         color: "white",
         padding: "0",
         textTransform: "uppercase"
+    },
+    avatar: {
+        display: "block",
+        margin: "0.5rem auto",
+        width: theme.spacing(10),
+        height: theme.spacing(10)
     }
 }));
 
@@ -112,20 +120,50 @@ const Resume = () => {
         <Box component="header" className={classes.mainContainer}>
             <Typography variant="h4" align="center" className={classes.heading}>
             Working Experience
+            <br/>
+            <br/>
+            <Avatar className={classes.avatar} src={avatar} alt="George Huliaris" />
+            
             </Typography>
             <Box component="div" className={classes.timeLine}>
                 <Typography 
                 variant="h2" 
                 className={`${classes.timeLineYear} ${classes.timeLineItem}`}
                 >
-                2009 <br/>
+                2008 - 2010 <br/>
                 </Typography>
                 <Box component="div" className={classes.timeLineItem}>
                     <Typography 
                     variant="h5" 
                     align="center" 
                     className={classes.subHeading}>
-                        co-founder
+                        Apple Sales Specialist
+                    </Typography>
+                    <Typography 
+                    variant="body1"
+                     align="center" 
+                     style={{color: "tomato"}}>
+                        Apple
+                    </Typography>
+                    <Typography 
+                    variant="subtitle1" 
+                    align="center"
+                    style={{color: "tan"}}>
+                       Consistently Top sales performance  
+                    </Typography>
+                </Box>
+                <Typography 
+                variant="h2" 
+                className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+                >
+                2009 - 2012 <br/>
+                </Typography>
+                <Box component="div" className={classes.timeLineItem}>
+                    <Typography 
+                    variant="h5" 
+                    align="center" 
+                    className={classes.subHeading}>
+                        Co-founder
                     </Typography>
                     <Typography 
                     variant="body1"
@@ -137,40 +175,14 @@ const Resume = () => {
                     variant="subtitle1" 
                     align="center"
                     style={{color: "tan"}}>
-                       Co-founded, cfo, managed shipping  
+                       Co-founded and managed shipping 
                     </Typography>
                 </Box>
                 <Typography 
                 variant="h2" 
                 className={`${classes.timeLineYear} ${classes.timeLineItem}`}
                 >
-                2010 - 2012 <br/>
-                </Typography>
-                <Box component="div" className={classes.timeLineItem}>
-                    <Typography 
-                    variant="h5" 
-                    align="center" 
-                    className={classes.subHeading}>
-                        Apple Sales Associate
-                    </Typography>
-                    <Typography 
-                    variant="body1"
-                     align="center" 
-                     style={{color: "tomato"}}>
-                        Apple 
-                    </Typography>
-                    <Typography 
-                    variant="subtitle1" 
-                    align="center"
-                    style={{color: "tan"}}>
-                       Lead sales for every store I worked in 
-                    </Typography>
-                </Box>
-                <Typography 
-                variant="h2" 
-                className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-                >
-                2012 - 2015 <br/>
+                2010 - 2013 <br/>
                 </Typography>
                 <Box component="div" className={classes.timeLineItem}>
                     <Typography 
@@ -196,7 +208,7 @@ const Resume = () => {
                 variant="h2" 
                 className={`${classes.timeLineYear} ${classes.timeLineItem}`}
                 >
-                2015 - Present<br/>
+                2013 - Present<br/>
                 </Typography>
                 <Box component="div" className={classes.timeLineItem}>
                     <Typography 
@@ -220,6 +232,7 @@ const Resume = () => {
                 </Box>
             </Box>
         </Box>
+                <Avatar className={classes.avatar} src={avatar} alt="George Huliaris" />
         </>
         );
     
