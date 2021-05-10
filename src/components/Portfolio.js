@@ -56,18 +56,20 @@ const Portfolio = () => {
                   Needless to say, I've come a long way!
                 </Typography>
               </CardContent>
+            </CardActionArea>
               <CardActions>
               
-                {/* <Button size="small" color="primary">
-                  Share
-                </Button> */}
+              <a href="https://github.com/georgehuliaris/Profile/tree/master" target="_blank">
+                <Button size="small" color="primary">
+                  GitHub
+                </Button>
+                </a>
                 <a href="https://georgehuliaris.github.io/Profile/" target="_blank">
                 <Button size="small" color="primary">
                   Visit Page
                 </Button>
                 </a>
               </CardActions>
-            </CardActionArea>
           </Card>
         </Grid>
         {/* Project 2 */}
@@ -90,17 +92,19 @@ const Portfolio = () => {
                   forget!
                 </Typography>
               </CardContent>
+            </CardActionArea>
               <CardActions>
-                {/* <Button size="small" color="primary">
-                  Share
-                </Button> */}
+              <a href="https://github.com/georgehuliaris/password_gen" target="_blank">
+                <Button size="small" color="primary">
+                  GitHub
+                </Button>
+                </a>
                 <a href="https://georgehuliaris.github.io/password_gen/" target="_blank">
                 <Button size="small" color="primary">
                   Visit Page
                 </Button>
                 </a>
               </CardActions>
-            </CardActionArea>
           </Card>
         </Grid>
         {/* Project 3 */}
@@ -123,17 +127,19 @@ const Portfolio = () => {
                   forget!
                 </Typography>
               </CardContent>
+            </CardActionArea>
               <CardActions>
-                {/* <Button size="small" color="primary">
-                  Share
-                </Button> */}
+              <a href="https://github.com/georgehuliaris/missedOpts" target="_blank">
+                <Button size="small" color="primary">
+                  GitHub
+                </Button>
+                </a>
                 <a href="https://georgehuliaris.github.io/missedOpts/" target="_blank">
                 <Button size="small" color="primary">
                   Visit Page
                 </Button>
                 </a>
               </CardActions>
-            </CardActionArea>
           </Card>
         </Grid>
         {/* Project 4 */}
@@ -156,17 +162,19 @@ const Portfolio = () => {
                   forget!
                 </Typography>
               </CardContent>
+            </CardActionArea>
               <CardActions>
-                {/* <Button size="small" color="primary">
-                  Share
-                </Button> */}
+              <a href="https://github.com/srfujii/Experience_Next/" target="_blank">
+                <Button size="small" color="primary">
+                  GitHub
+                </Button>
+                </a>
                 <a href="https://fathomless-citadel-02367.herokuapp.com/" target="_blank">
                 <Button size="small" color="primary">
                   Visit Page
                 </Button>
                 </a>
               </CardActions>
-            </CardActionArea>
           </Card>
         </Grid>
       </Grid>
