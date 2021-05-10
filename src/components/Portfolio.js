@@ -34,8 +34,8 @@ const useStyles = makeStyles((theme) => ({
     avatar: {
       display: "block",
       margin: "0.5rem auto",
-      width: theme.spacing(10),
-      height: theme.spacing(10)
+      width: theme.spacing(12),
+      height: theme.spacing(12)
   }
     
 }));
@@ -59,10 +59,10 @@ const Portfolio = () => {
 
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                  My First Professional Portfolio
+                  My First Portfolio
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Needless to say, I've come a long way!
+                  Needless to say, I've come a long way, all thanks to Trilogy Bootcamp.
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -94,11 +94,10 @@ const Portfolio = () => {
 
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                  Project 2
+                  Password Generator
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Lorem Ipsum Put some stuff here about your project and dont
-                  forget!
+                  It's time to update that Password123 some something a bit more secure.
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -130,11 +129,10 @@ const Portfolio = () => {
 
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                  Project 3
+                  Missed Opportunities
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Lorem Ipsum Put some stuff here about your project and dont
-                  forget!
+                  How much money could you have made if you invested into Bitcoin or Apple Stocks.
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -165,11 +163,10 @@ const Portfolio = () => {
 
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                  Project 4
+                  ExperienceNext
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Lorem Ipsum Put some stuff here about your project and dont
-                  forget!
+                  Connecting you to safe in home experiences so that you don't go crazy during quarantine.
                 </Typography>
               </CardContent>
             </CardActionArea>

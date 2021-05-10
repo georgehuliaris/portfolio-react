@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {Link} from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import MobilLeftMenuSlider from "@material-ui/core/Drawer";
+import Footer from "./Footer";
 import {
     Toolbar,
     Typography,
@@ -116,6 +117,7 @@ const Navbar = () => {
                     onClose={toggleSlider("left", false)}
                     >
                         {sideList("left")}
+                        <Footer/>
                     </MobilLeftMenuSlider>
                 </Toolbar>
             </AppBar>

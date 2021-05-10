@@ -22,9 +22,8 @@ const useStyles = makeStyles((theme) => ({
     width: theme.spacing(15),
     height: theme.spacing(15),
     margin: theme.spacing(15),
-    
-
 },
+  
 }));
 
 const InputField = withStyles({
@@ -86,9 +85,11 @@ const Contacts = () => {
             size="medium"
           />
           <br />
+          
+          <a href="mailto:georgehuliaris@me.com" style={{ textDecoration: 'none' }}>
           <Button className={classes.button} variant="outlined" fullWidth={true} endIcon={<SendIcon />}>
             contact me
-          </Button>
+          </Button></a>
           
         </Box>
       </Grid>

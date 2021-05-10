@@ -107,8 +107,8 @@ const useStyles = makeStyles(theme=>({
     avatar: {
         display: "block",
         margin: "0.5rem auto",
-        width: theme.spacing(10),
-        height: theme.spacing(10)
+        width: theme.spacing(15),
+        height: theme.spacing(15)
     }
 }));
 
@@ -119,7 +119,7 @@ const Resume = () => {
         <Navbar />
         <Box component="header" className={classes.mainContainer}>
             <Typography variant="h4" align="center" className={classes.heading}>
-            Working Experience
+            Work Experience
             <br/>
             <br/>
             <Avatar className={classes.avatar} src={avatar} alt="George Huliaris" />
@@ -230,9 +230,35 @@ const Resume = () => {
                        Co-Owner and General Manager  
                     </Typography>
                 </Box>
+                <Typography 
+                variant="h2" 
+                className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+                >
+                2021<br/>
+                </Typography>
+                <Box component="div" className={classes.timeLineItem}>
+                    <Typography 
+                    variant="h5" 
+                    align="center" 
+                    className={classes.subHeading}>
+                        Graduate
+                    </Typography>
+                    <Typography 
+                    variant="body1"
+                     align="center" 
+                     style={{color: "tomato"}}>
+                        Full stack Web Dev 
+                    </Typography>
+                    <Typography 
+                    variant="subtitle1" 
+                    align="center"
+                    style={{color: "tan"}}>
+                       Trilogy Bootcamp in association with Rice University 
+                    </Typography>
+                </Box>
             </Box>
         </Box>
-                <Avatar className={classes.avatar} src={avatar} alt="George Huliaris" />
+                {/* <Avatar className={classes.avatar} src={avatar} alt="George Huliaris" /> */}
         </>
         );
     
