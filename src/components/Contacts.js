@@ -4,6 +4,7 @@ import { TextField, Typography, Button, Grid, Box, Avatar } from "@material-ui/c
 import SendIcon from "@material-ui/icons/Send";
 import Navbar from "./Navbar";
 import avatar from "../luckyme.png";
+import Particles from "react-particles-js";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -12,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
     left: "50%",
     transform: "translate(-50%, -50%)",
     position: "absolute",
+    opacity: ".95",
   },
   button: {
     marginTop: "1rem",
@@ -21,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
   avatar: {
     width: theme.spacing(15),
     height: theme.spacing(15),
-    margin: theme.spacing(15),
+    margin: theme.spacing(9),
 },
   
 }));
@@ -51,14 +53,55 @@ const InputField = withStyles({
 const Contacts = () => {
   const classes = useStyles();
   return (
-    <Box component="div" style={{ background: "#233", height: "100vh" }}>
+    <Box component="div" style={{ background: "#233", height: "150vh", opacity: ".95" }}>
         <Navbar />
+        <Particles
+        canvasClassName={classes.particlesCanva}
+        params={{
+          particles: {
+            number: {
+              value: 20,
+              density: {
+                enable: true,
+                value_area: 900,
+              },
+            },
+            shape: {
+              type: "star",
+              stroke: {
+                width: 3,
+                color: "tomato",
+              },
+            },
+            size: {
+              value: 6,
+              random: true,
+              anim: {
+                enable: true,
+                speed: 1,
+                size_min: 0.1,
+                sync: true,
+              },
+            },
+            opacity: {
+              value: .01,
+              random: true,
+              anim: {
+                enable: true,
+                speed: 1,
+                opacity_min: 0.1,
+                sync: false,
+              },
+            },
+          },
+        }}
+      />
       <Grid container justify="center">
       
         <Box component="form" className={classes.form}>
         <Avatar className={classes.avatar} src={avatar} alt="George Huliaris" />
           <Typography variant="h5" style={{color: "tomato", textAlign: "center", textTransform: "uppercase" }}>Hire or contact me!</Typography>
-          <InputField
+          {/* <InputField
             fullWidth={true}
             label="Name"
             variant="outlined"
@@ -84,12 +127,17 @@ const Contacts = () => {
             margin="dense"
             size="medium"
           />
-          <br />
+          <br /> */}
           
-          <a href="mailto:georgehuliaris@me.com" style={{ textDecoration: 'none' }}>
-          <Button className={classes.button} variant="outlined" fullWidth={true} endIcon={<SendIcon />}>
-            contact me
-          </Button></a>
+          <a href="mailto:georgehuliaris@me.com?subject=You're hired!&body=Hello, future employee! We saw your portfolio and would like to offer you a job starting at $1,000,000 USD per year, but we're willing to negotiate." style={{ textDecoration: 'none' }}>
+          <Button 
+          className={classes.button} 
+          variant="outlined" 
+          fullWidth={true} 
+          endIcon={<SendIcon />}>
+            start a conversation
+          </Button>
+          </a>
           
         </Box>
       </Grid>

@@ -20,31 +20,30 @@ import project4 from "../images/ExpressNext.png";
 import avatar from "../thankfulme.png";
 
 
-
 const useStyles = makeStyles((theme) => ({
-    mainContainer: {
-        background: "#233",
-        height:"100%"
-    },
-    cardContainer: {
-        maxWidth: 345,
-        // margin: "3rem"
-        margin: "5rem auto"
-    },
-    avatar: {
-      display: "block",
-      margin: "0.5rem auto",
-      width: theme.spacing(12),
-      height: theme.spacing(12)
-  }
-    
+  mainContainer: {
+    background: "#233",
+    height: "500vh",
+    opacity: ".96",
+  },
+  cardContainer: {
+    maxWidth: 345,
+    margin: "5rem auto",
+  },
+  avatar: {
+    display: "block",
+    margin: "0.5rem auto",
+    width: theme.spacing(12),
+    height: theme.spacing(12),
+  },
 }));
 
 const Portfolio = () => {
-    const classes = useStyles()
+  const classes = useStyles();
   return (
     <Box component="div" className={classes.mainContainer}>
       <Navbar />
+
       <Grid container justify="center">
         {/* Project 1 */}
         <Grid item xs={12} sm={8} md={6}>
@@ -62,23 +61,29 @@ const Portfolio = () => {
                   My First Portfolio
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Needless to say, I've come a long way, all thanks to Trilogy Bootcamp.
+                  Needless to say, I've come a long way, all thanks to Trilogy
+                  Bootcamp.
                 </Typography>
               </CardContent>
             </CardActionArea>
-              <CardActions>
-              
-              <a href="https://github.com/georgehuliaris/Profile/tree/master" target="_blank">
+            <CardActions>
+              <a
+                href="https://github.com/georgehuliaris/Profile/tree/master"
+                target="_blank"
+              >
                 <Button size="small" color="primary">
                   GitHub
                 </Button>
-                </a>
-                <a href="https://georgehuliaris.github.io/Profile/" target="_blank">
+              </a>
+              <a
+                href="https://georgehuliaris.github.io/Profile/"
+                target="_blank"
+              >
                 <Button size="small" color="primary">
                   Visit Page
                 </Button>
-                </a>
-              </CardActions>
+              </a>
+            </CardActions>
           </Card>
         </Grid>
         {/* Project 2 */}
@@ -97,25 +102,32 @@ const Portfolio = () => {
                   Password Generator
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  It's time to update that Password123 some something a bit more secure.
+                  It's time to update that Password123 some something a bit more
+                  secure.
                 </Typography>
               </CardContent>
             </CardActionArea>
-              <CardActions>
-              <a href="https://github.com/georgehuliaris/password_gen" target="_blank">
+            <CardActions>
+              <a
+                href="https://github.com/georgehuliaris/password_gen"
+                target="_blank"
+              >
                 <Button size="small" color="primary">
                   GitHub
                 </Button>
-                </a>
-                <a href="https://georgehuliaris.github.io/password_gen/" target="_blank">
+              </a>
+              <a
+                href="https://georgehuliaris.github.io/password_gen/"
+                target="_blank"
+              >
                 <Button size="small" color="primary">
                   Visit Page
                 </Button>
-                </a>
-              </CardActions>
+              </a>
+            </CardActions>
           </Card>
         </Grid>
-        
+
         {/* Project 3 */}
         <Grid item xs={12} sm={8} md={6}>
           <Card className={classes.cardContainer}>
@@ -132,24 +144,32 @@ const Portfolio = () => {
                   Missed Opportunities
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  How much money could you have made if you invested into Bitcoin or Apple Stocks.
+                  How much money could you have made if you invested into
+                  Bitcoin or Apple Stocks.
                 </Typography>
               </CardContent>
             </CardActionArea>
-              <CardActions>
-              <a href="https://github.com/georgehuliaris/missedOpts" target="_blank">
+            <CardActions>
+              <a
+                href="https://github.com/georgehuliaris/missedOpts"
+                target="_blank"
+              >
                 <Button size="small" color="primary">
                   GitHub
                 </Button>
-                </a>
-                <a href="https://georgehuliaris.github.io/missedOpts/" target="_blank">
+              </a>
+              <a
+                href="https://georgehuliaris.github.io/missedOpts/"
+                target="_blank"
+              >
                 <Button size="small" color="primary">
                   Visit Page
                 </Button>
-                </a>
-              </CardActions>
+              </a>
+            </CardActions>
           </Card>
         </Grid>
+
         {/* Project 4 */}
         <Grid item xs={12} sm={8} md={6}>
           <Card className={classes.cardContainer}>
@@ -166,26 +186,33 @@ const Portfolio = () => {
                   ExperienceNext
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Connecting you to safe in home experiences so that you don't go crazy during quarantine.
+                  Connecting you to safe in home experiences so that you don't
+                  go crazy during quarantine.
                 </Typography>
               </CardContent>
             </CardActionArea>
-              <CardActions>
-              <a href="https://github.com/srfujii/Experience_Next/" target="_blank">
+            <CardActions>
+              <a
+                href="https://github.com/srfujii/Experience_Next/"
+                target="_blank"
+              >
                 <Button size="small" color="primary">
                   GitHub
                 </Button>
-                </a>
-                <a href="https://fathomless-citadel-02367.herokuapp.com/" target="_blank">
+              </a>
+              <a
+                href="https://fathomless-citadel-02367.herokuapp.com/"
+                target="_blank"
+              >
                 <Button size="small" color="primary">
                   Visit Page
                 </Button>
-                </a>
-              </CardActions>
+              </a>
+            </CardActions>
           </Card>
         </Grid>
       </Grid>
-<Avatar className={classes.avatar} src={avatar} alt="George Huliaris" />
+      <Avatar className={classes.avatar} src={avatar} alt="George Huliaris" />
     </Box>
   );
 };
