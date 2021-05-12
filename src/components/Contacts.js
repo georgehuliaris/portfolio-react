@@ -112,7 +112,7 @@ const Contacts = () => {
           <br />
           <InputField
             fullWidth={true}
-            label="Email"
+            label="Email"¸
             variant="outlined"
             inputProps={{ style: { color: "white" } }}
             margin="dense"
@@ -129,7 +129,7 @@ const Contacts = () => {
           />
           <br /> */}
           
-          <a href="mailto:georgehuliaris@me.com?subject=You're hired!&body=Hello, future employee! We saw your portfolio and would like to offer you a job starting at $1,000,000 USD per year, but we're willing to negotiate." style={{ textDecoration: 'none' }}>
+          <a href="mailto:georgehuliaris@me.com?subject=Hello!&body=Hi, George! We saw your portfolio and wanted to reach out!" style={{ textDecoration: 'none' }}>
           <Button 
           className={classes.button} 
           variant="outlined" 

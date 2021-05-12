@@ -148,6 +148,8 @@ const Resume = () => {
               align="center"
               style={{ color: "tomato" }}
             >
+              Trilogy Bootcamp in association with Rice University
+              <br />
               FullStack Web Development
             </Typography>
             <Typography
@@ -155,17 +157,15 @@ const Resume = () => {
               align="center"
               style={{ color: "tan" }}
             >
-              <li>HTML/CSS</li>
-              <li>JavaScript</li>
-              <li> Node </li>
-              <li>Express</li>
-              <li>MVC</li>
-              <li>React</li>
-              <li>MERN</li>
-              Trilogy Bootcamp in association with Rice University<br/>
-
-
-              <li>HTML/CSS Certified via Udemy</li>
+              <ul align="left">
+                <li>HTML/CSS (Certified via Udemy as well)</li>
+                <li>JavaScript</li>
+                <li> Node </li>
+                <li>Express</li>
+                <li>MVC</li>
+                <li>React</li>
+                <li>MERN</li>
+              </ul>
             </Typography>
           </Box>
           <Typography
@@ -403,11 +403,12 @@ const Resume = () => {
               align="center"
               style={{ color: "tan" }}
             >
-              Rang up groceries and made sure register was balanced and correct at the end of each shift
+              Rang up groceries and made sure register was balanced and correct
+              at the end of each shift
             </Typography>
           </Box>
         </Box>
-      {/* <Avatar className={classes.avatar} src={avatar} alt="George Huliaris" /> */}
+        {/* <Avatar className={classes.avatar} src={avatar} alt="George Huliaris" /> */}
       </Box>
     </>
   );

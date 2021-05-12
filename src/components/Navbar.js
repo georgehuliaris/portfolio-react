@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import MobilLeftMenuSlider from "@material-ui/core/Drawer";
 import Footer from "./Footer";
+import MenuIcon from '@material-ui/icons/Menu';
 import {
     Toolbar,
     Typography,
@@ -18,7 +19,6 @@ import {
 
 } from "@material-ui/core";
 import {
-    ArrowBack,
     AssignmentInd,
     Home,
     Apps,
@@ -106,7 +106,7 @@ const Navbar = () => {
             <AppBar position="static" style={{background: "#222"}}>
                 <Toolbar>
                     <IconButton onClick={toggleSlider("left", true)}>
-                        <ArrowBack style={{ color: "tomato" }} />
+                        <MenuIcon style={{ color: "tomato" }} />
                     </IconButton>
                     <Typography variant="h5" style={{ color: "tan" }}>
                         George Huliaris
